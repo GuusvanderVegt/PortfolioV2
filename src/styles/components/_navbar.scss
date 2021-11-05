@@ -1,0 +1,47 @@
+.navbar {
+    &__container {
+        // @apply flex  items-center px-8;
+        @apply max-w-6xl mx-auto px-4 flex justify-between;
+    }
+
+    &__primary {
+        @apply flex space-x-4;
+    }
+
+    &__logo {
+        @apply flex items-center py-5 px-2 text-gray-700 hover:text-gray-900;
+
+        &-icon {
+            @apply h-8 w-8 mr-1 text-purple-700 hover:text-gray-900;
+        }
+
+        &-text {
+            @apply font-bold text-xl;
+        }
+    }
+
+    &__links {
+        @apply hidden md:flex items-center;
+    }
+
+    &__link {
+        @apply py-5 px-3 text-purple-700 hover:text-white hover:bg-purple-700 transition duration-500 ease-in-out;
+        // height: 100%;
+    }
+
+    &__menu-toggler {
+        @apply md:hidden flex items-center;
+    }
+
+    &__menu-toggler-icon {
+        @apply h-6 w-6;
+    }
+
+    // &__title {
+    //     @apply text-xl mr-8 font-bold;
+    // }
+
+    // &__link:not(:last-child) {
+    //     @apply mr-4;
+    // }
+}
