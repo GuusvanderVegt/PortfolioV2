@@ -1,6 +1,5 @@
 .navbar {
     &__container {
-        // @apply flex  items-center px-8;
         @apply max-w-6xl mx-auto px-4 flex justify-between;
     }
 
@@ -37,11 +36,11 @@
         @apply h-6 w-6;
     }
 
-    // &__title {
-    //     @apply text-xl mr-8 font-bold;
-    // }
+    &__mobile {
+        @apply md:hidden flex flex-col transition duration-500 ease-in-out;
 
-    // &__link:not(:last-child) {
-    //     @apply mr-4;
-    // }
+        &-hidden {
+            @apply hidden;
+        }
+    }
 }
