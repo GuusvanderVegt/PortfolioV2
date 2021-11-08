@@ -18,6 +18,11 @@
                 </nav>
             </div>
 
+            <!-- Secondary nav -->
+            <nav class="navbar__links">
+                <ThemeToggler />
+            </nav>
+
             <!-- Mobile toggler -->
             <button class="navbar__menu-toggler" @click="toggleMobileMenu">
                 <BaseIcon name="menu" class="navbar__menu-toggler-icon" />
@@ -31,6 +36,8 @@
             <a href="#" class="navbar__link">About me</a>
             <a href="#" class="navbar__link">Projects</a>
             <a href="#" class="navbar__link">Contact me</a>
+
+            <ThemeToggler class="navbar__link" />
         </div>
     </header>
 
@@ -39,6 +46,7 @@
 
 <script setup>
 import { ref } from "@vue/reactivity";
+import ThemeToggler from "./ThemeToggler.vue";
 
 const mobileMenu = ref();
 

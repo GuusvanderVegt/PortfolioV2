@@ -1,3 +1,5 @@
+@use "../extensions/transition";
+
 .navbar {
     &__container {
         @apply max-w-6xl mx-auto px-4 flex justify-between;
@@ -8,7 +10,7 @@
     }
 
     &__logo {
-        @apply flex items-center py-5 pr-2 text-gray-700 hover:text-gray-900;
+        @apply flex items-center py-5 pr-2 text-gray-700 dark:text-white hover:text-gray-900;
 
         &-icon {
             @apply h-8 w-8 mr-1 text-purple-700 hover:text-gray-900;
@@ -24,8 +26,9 @@
     }
 
     &__link {
-        @apply py-5 px-3 text-purple-700 hover:text-white hover:bg-purple-700 transition duration-500 ease-in-out;
-        // height: 100%;
+        @extend %transition;
+        @extend %transition--500;
+        @apply py-5 px-3 text-purple-700 hover:text-white hover:bg-purple-700;
     }
 
     &__menu-toggler {
@@ -36,8 +39,17 @@
         @apply h-6 w-6;
     }
 
+    &__theme-toggler {
+        @apply flex items-center;
+        &-icon {
+            @apply h-6 w-6 hover:text-gray-400;
+        }
+    }
+
     &__mobile {
-        @apply md:hidden flex flex-col transition duration-500 ease-in-out;
+        @extend %transition;
+        @extend %transition--500;
+        @apply md:hidden flex flex-col;
 
         &-hidden {
             @apply hidden;

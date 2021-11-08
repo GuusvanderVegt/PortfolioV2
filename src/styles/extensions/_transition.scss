@@ -1,0 +1,7 @@
+%transition {
+    @apply transition  ease-in-out;
+
+    &--500 {
+        @apply duration-500;
+    }
+}
