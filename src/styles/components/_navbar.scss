@@ -8,7 +8,7 @@
     }
 
     &__logo {
-        @apply flex items-center py-5 px-2 text-gray-700 hover:text-gray-900;
+        @apply flex items-center py-5 pr-2 text-gray-700 hover:text-gray-900;
 
         &-icon {
             @apply h-8 w-8 mr-1 text-purple-700 hover:text-gray-900;

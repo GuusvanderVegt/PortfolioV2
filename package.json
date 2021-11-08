@@ -12,7 +12,8 @@
     "@headlessui/vue": "^1.4.1",
     "@heroicons/vue": "^1.0.5",
     "@ivanv/vue-collapse-transition": "^1.0.2",
-    "vue": "^3.2.16"
+    "vue": "^3.2.16",
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",

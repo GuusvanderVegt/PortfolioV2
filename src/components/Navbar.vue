@@ -6,10 +6,7 @@
             <div class="navbar__primary">
                 <!-- Logo -->
                 <a href="#" class="navbar__logo">
-                    <BaseIcon
-                        class="navbar__logo-icon h-16 w-16"
-                        name="clipboard-list"
-                    />
+                    <BaseIcon class="navbar__logo-icon" name="clipboard-list" />
                     <span class="navbar__logo-text">Guus van der Vegt</span>
                 </a>
 
@@ -36,6 +33,8 @@
             <a href="#" class="navbar__link">Contact me</a>
         </div>
     </header>
+
+    <hr class="text-gray-100" />
 </template>
 
 <script setup>

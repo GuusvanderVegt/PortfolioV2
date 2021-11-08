@@ -7,9 +7,8 @@
 @import "./base/variables";
 @import "./base/base";
 
+//Elements
+@import "./elements/form.scss";
+
 //Components
 @import "./components/navbar";
-
-// @tailwind base;
-// @tailwind components;
-// @tailwind utilities;

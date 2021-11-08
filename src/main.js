@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import router from "./router";
 import "./styles/main.scss";
 
 const app = createApp(App);
@@ -13,5 +14,7 @@ Object.entries(components).forEach(([path, definition]) => {
         .replace(/\.\w+$/, "");
     app.component(componentName, definition.default);
 });
+
+app.use(router);
 
 app.mount("#app");
