@@ -1,24 +1,38 @@
 <template>
     <section class="page home">
         <form class="form mb-24">
-            <div class="form__row input-row">
-                <label for="item1" class="input-row__label">Item 1</label>
-                <input
-                    id="item1"
-                    v-model="itemValue"
-                    type="text"
-                    name="item 1"
-                    class="input input__text input-row__element"
-                />
-            </div>
+            <BaseInput
+                v-model="itemValue"
+                label="Gebruikersnaam:"
+                type="text"
+                placeholder="Uw gebruikersnaam:"
+            />
+
+            <BaseInput
+                v-model="itemValue2"
+                label="Wachtwoord: "
+                type="Password"
+                placeholder="Uw wachtwoord"
+            />
         </form>
 
         <p>{{ itemValue }}</p>
+        <p>{{ itemValue2 }}</p>
     </section>
 </template>
 
-<script setup>
+<script>
 import { ref } from "@vue/reactivity";
 
-let itemValue = ref("value");
+export default {
+    setup() {
+        let itemValue = ref("");
+        let itemValue2 = ref("");
+
+        return {
+            itemValue,
+            itemValue2,
+        };
+    },
+};
 </script>
