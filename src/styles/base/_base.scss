@@ -4,7 +4,14 @@ html {
 
 body {
     // background-color: rgb(13, 36, 56);
-    @apply dark:bg-primary-dark dark:text-white;
+
+    @apply dark:bg-primary-dark dark:text-white transition duration-300;
+}
+
+html,
+body,
+#app {
+    @apply h-full m-0;
 }
 
 .container {
@@ -12,7 +19,11 @@ body {
 }
 
 .page {
-    @apply max-w-6xl mx-auto px-4 mt-4;
+    @apply max-w-6xl mx-auto px-4;
+
+    // &--full {
+    //     @apply max-w-full
+    // }
 }
 
 input {
