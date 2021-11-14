@@ -6,9 +6,11 @@
 //Base
 @import "./base/variables";
 @import "./base/base";
+@import "./base/typography";
 
 //Elements
 @import "./elements/form.scss";
+@import "./elements/button.scss";
 
 //Views
 @import "./views/home";

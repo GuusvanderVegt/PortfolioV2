@@ -14,12 +14,12 @@ body,
     @apply h-full m-0;
 }
 
-.container {
-    @apply mx-auto;
-}
+// .container {
+//     @apply mx-auto;
+// }
 
 .page {
-    @apply max-w-6xl mx-auto px-4;
+    @apply container;
 
     // &--full {
     //     @apply max-w-full

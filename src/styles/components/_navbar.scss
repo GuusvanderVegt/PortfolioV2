@@ -1,8 +1,9 @@
 @use "../extensions/transition";
 
 .navbar {
+    height: 75px;
     &__container {
-        @apply max-w-7xl mx-auto px-4 flex justify-between;
+        @apply container flex justify-between;
     }
 
     &__primary {
