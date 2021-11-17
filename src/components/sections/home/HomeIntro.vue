@@ -6,7 +6,7 @@
                 I am a full stack web developer
             </h4>
             <div class="home-intro__actions">
-                <a href="#" class="button button--link button--dense">CASES</a>
+                <a href="#" class="button button--link">CASES</a>
                 <a href="#" class="button button--link">CONTACT ME</a>
             </div>
         </div>
