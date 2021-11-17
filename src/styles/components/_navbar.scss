@@ -1,6 +1,8 @@
 @use "../extensions/transition";
 
 .navbar {
+    @apply z-50;
+    position: relative;
     height: 75px;
     &__container {
         @apply container flex justify-between;
@@ -14,11 +16,11 @@
         @apply flex items-center py-5 pr-2 text-gray-700 dark:text-white hover:text-gray-900;
 
         &-icon {
-            @apply h-8 w-8 mr-1 text-purple-700 hover:text-gray-900;
+            @apply hidden sm:block h-8 w-8 mr-1 text-purple-700 hover:text-gray-900;
         }
 
         &-text {
-            @apply font-bold text-xl;
+            @apply font-bold text-base md:text-xl;
         }
     }
 
@@ -50,7 +52,7 @@
     &__mobile {
         @extend %transition;
         @extend %transition--500;
-        @apply md:hidden flex flex-col;
+        @apply md:hidden flex flex-col bg-white z-50;
 
         &-hidden {
             @apply hidden;

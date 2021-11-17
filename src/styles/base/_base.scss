@@ -20,6 +20,7 @@ body,
 
 .page {
     @apply container;
+    position: relative;
 
     // &--full {
     //     @apply max-w-full

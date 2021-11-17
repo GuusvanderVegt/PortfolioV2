@@ -12,9 +12,9 @@
 
                 <!-- Primary nav -->
                 <nav class="navbar__links">
-                    <a href="#" class="navbar__link">About me</a>
-                    <a href="#" class="navbar__link">Projects</a>
-                    <a href="#" class="navbar__link">Contact me</a>
+                    <a href="#" class="button button--link">About me</a>
+                    <a href="#" class="button button--link">Projects</a>
+                    <a href="#" class="button button--link">Contact me</a>
                 </nav>
             </div>
 
@@ -41,7 +41,7 @@
         </div>
     </header>
 
-    <hr class="text-gray-100" />
+    <!-- <hr class="text-gray-100" /> -->
 </template>
 
 <script setup>
