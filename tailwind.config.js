@@ -11,9 +11,20 @@ module.exports = {
                 lg: "2rem",
             },
         },
+
         extend: {
             colors: {
                 "primary-dark": "#0d2438",
+            },
+            screens: {
+                // mobile: "480px",
+                tablet: "481px",
+                laptop: "769px",
+                desktop: "1025px",
+            },
+
+            gridTemplateRows: {
+                auto: "auto",
             },
         },
     },

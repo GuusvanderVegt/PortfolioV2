@@ -33,11 +33,11 @@
 
         <!-- Mobile menu -->
         <div ref="mobileMenu" class="navbar__mobile navbar__mobile-hidden">
-            <a href="#" class="navbar__link">About me</a>
-            <a href="#" class="navbar__link">Projects</a>
-            <a href="#" class="navbar__link">Contact me</a>
+            <a href="#" class="button button--link">About me</a>
+            <a href="#" class="button button--link">Projects</a>
+            <a href="#" class="button button--link">Contact me</a>
 
-            <ThemeToggler class="navbar__link" />
+            <ThemeToggler class="button button--link" />
         </div>
     </header>
 
